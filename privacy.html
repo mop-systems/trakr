@@ -3,28 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Trakr</title>
+    <title>Privacy Policy - TRAKR</title>
     <style>
+        /* TRAKR - Dark & Purple Theme */
         body {
-            background-color: #121212;
+            /* Syvän tumma tausta, hieman violettiin taittava */
+            background-color: #0b0814; 
             color: #E0E0E0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
         }
         .container {
             max-width: 800px;
+            width: 100%;
             margin: 40px auto;
-            background: #1F1F1F;
-            padding: 30px;
-            border-radius: 8px;
-            border: 1px solid #333;
+            /* Tummanharmaa/violetti laatikko */
+            background: #151120; 
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid rgba(162, 107, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 5px;
         }
         h1 {
-            color: #39FF14;
-            font-size: 24px;
-            margin-bottom: 5px;
+            /* TRAKRin tunnusväri */
+            color: #a26bff; 
+            font-size: 28px;
+            margin: 0;
+            letter-spacing: 1px;
+            font-weight: 800;
         }
         .last-updated {
             color: #8B899A;
@@ -32,52 +49,107 @@
             margin-bottom: 30px;
         }
         h2 {
-            color: #39FF14;
+            color: #a26bff;
             font-size: 18px;
-            margin-top: 25px;
-            border-bottom: 1px solid #333;
-            padding-bottom: 5px;
+            margin-top: 35px;
+            border-bottom: 1px solid rgba(162, 107, 255, 0.2);
+            padding-bottom: 8px;
+            font-weight: 700;
         }
         p, li {
             color: #C0C0C0;
-            font-size: 14px;
+            font-size: 15px;
         }
         ul {
             padding-left: 20px;
         }
-        .footer {
-            margin-top: 40px;
-            text-align: center;
-            font-size: 12px;
+        li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #E0E0E0;
+        }
+        a {
+            color: #a26bff;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #c4a1ff;
+            text-decoration: underline;
+        }
+        
+        /* Takaisin-nappi */
+        .back-link {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 14px;
             color: #8B899A;
+            border: 1px solid #333;
+            padding: 6px 12px;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+        .back-link:hover {
+            background-color: rgba(162, 107, 255, 0.1);
+            color: #a26bff;
+            border-color: #a26bff;
+            text-decoration: none;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+            font-size: 13px;
+            color: #8B899A;
+        }
+        
+        /* Mobiilioptimointi */
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .container { 
+                margin: 10px auto; 
+                padding: 25px; 
+            }
+            .header-top {
+                flex-direction: column;
+            }
+            h1 { font-size: 24px; }
+            .back-link { margin-top: 15px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Privacy Policy for TRAKR</h1>
-        <div class="last-updated">Last updated: July 30, 2026</div>
+        <div class="header-top">
+            <h1>Privacy Policy for TRAKR</h1>
+            <a href="../index.html" class="back-link">&larr; Back to M.O.P Systems</a>
+        </div>
+        
+        <div class="last-updated">Last updated: September 21, 2026</div>
 
-        <p><strong>TRAKR</strong> was built as an Free app. This SERVICE is provided by us at no cost and is intended for use as is.</p>
+        <p><strong>TRAKR</strong> was built as a Free app. This SERVICE is provided by us at no cost and is intended for use as is.</p>
         
         <p>This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.</p>
 
         <h2>Information Collection and Use</h2>
         <p>TRAKR is designed with your privacy in mind:</p>
         <ul>
-            <li><strong>Local Data Storage:</strong> Your tracked shows, seasons, episodes, and watch history are stored locally on your device using a local database (Room). We do not store or collect your personal viewing history on any external servers.</li>
-            <li><strong>Third-Party APIs:</strong> The app fetches television show data, images, and metadata from the <strong>TMDb API</strong> (The Movie Database). When you search for shows or view details, requests are sent directly to TMDb. Please refer to <a href="https://www.themoviedb.org/privacy-policy" target="_blank" style="color: #39FF14;">TMDb's Privacy Policy</a> for information regarding their data practices.</li>
+            <li><strong>Local Data Storage:</strong> Your tracked shows, seasons, episodes, and watch history are stored locally on your device using a local database. We do not store, collect, or transmit your personal viewing history to any external servers.</li>
+            <li><strong>Third-Party APIs:</strong> The app fetches television show data, images, and metadata from the <strong>TMDb API</strong> (The Movie Database). When you search for shows or view details, requests are sent directly to TMDb. Please refer to <a href="https://www.themoviedb.org/privacy-policy" target="_blank">TMDb's Privacy Policy</a> for information regarding their data practices.</li>
         </ul>
 
         <h2>Permissions</h2>
         <p>The app may require certain permissions to function correctly:</p>
         <ul>
             <li><strong>Notifications:</strong> Used locally on your device to notify you about new episodes airing today (if enabled by you in the settings).</li>
-            <li><strong>Storage / File Access:</strong> Used exclusively when you manually choose to export or import your backup data file (.json) to and from your device storage.</li>
+            <li><strong>Storage / File Access:</strong> Used exclusively when you manually choose to export or import your backup data file (.json or .csv) to and from your device storage.</li>
         </ul>
 
         <h2>Security</h2>
-        <p>Since your personal tracking data remains locally on your device, you are in control of your data. We value your trust in using our app, but remember that no method of transmission over the internet or electronic storage is 100% secure.</p>
+        <p>Since your personal tracking data remains locally on your device, you are in full control of your data. We value your trust in using our app, but remember that no method of transmission over the internet or electronic storage is 100% secure.</p>
 
         <h2>Children's Privacy</h2>
         <p>Our Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13.</p>
